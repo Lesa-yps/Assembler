@@ -1,0 +1,2 @@
+C:\assembly\lab7\ConsoleApplication1\Debug\ConsoleApplication1.exe
+C:\assembly\lab7\ConsoleApplication1_32\Debug\ConsoleApplication1.exe

@@ -1,0 +1,106 @@
+﻿  Assembling copystr.asm...
+  ConsoleApplication1.cpp
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(25,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,3): error C2065: mov: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,7): error C2065: edi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,22): error C2065: загружаем: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,41): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "указатель"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,41): error C2065: указатель: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,60): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "на"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,60): error C2065: на: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,65): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "строку"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,65): error C2065: строку: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,78): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "в"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,78): error C2065: в: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,81): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "регистр"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,81): error C2065: регистр: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,96): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(27,96): error C2065: edi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,3): error C2065: mov: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esi"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,7): error C2065: esi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,22): error C2065: сохраняем: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,41): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "адрес"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,41): error C2065: адрес: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,52): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "начала"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,52): error C2065: начала: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,65): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "строки"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,65): error C2065: строки: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,78): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "в"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,78): error C2065: в: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,81): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "регистр"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,81): error C2065: регистр: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,96): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esi"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(28,96): error C2065: esi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,7): error C2065: eax: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,12): error C2065: eax: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,21): error C2065: eax: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,30): error C2065: символ: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,43): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "для"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,27): warning C4353: нестандартное расширение: константа 0 в качестве выражения функции.  Следует заменить на подставляемую функцию "__noop"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,43): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "для"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,43): error C2065: для: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,50): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "поиска"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,50): error C2065: поиска: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,63): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "нулевой"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,79): error C2065: конец: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,90): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "строки"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,63): error C3861: нулевой: идентификатор не найден
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,90): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "строки"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,90): error C2065: строки: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,103): error C2143: синтаксическая ошибка: отсутствие ";" перед "константа"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,107): error C2059: синтаксическая ошибка: )
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(29,108): error C2059: синтаксическая ошибка: )
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,3): error C2065: mov: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ecx"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,7): error C2065: ecx: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,12): error C3688: недопустимый литеральный суффикс "ffffffffh"; не удалось найти литеральный оператор или шаблон литерального оператора "operator ""ffffffffh"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,27): error C2065: устанавливаем: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,54): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "максимальное"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,54): error C2065: максимальное: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,79): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "количество"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,79): error C2065: количество: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,100): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "повторов"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,100): error C2065: повторов: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,117): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "поиска"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,117): error C2065: поиска: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,130): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "в"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,130): error C2065: в: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,133): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "масимальное"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,133): error C2065: масимальное: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,156): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "число"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,171): error C2143: синтаксическая ошибка: отсутствие ")" перед "константа"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,156): error C3861: число: идентификатор не найден
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,171): error C2143: синтаксическая ошибка: отсутствие ";" перед "константа"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,173): error C2065: ы: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,176): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "в"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,176): error C2065: в: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,179): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "двоичном"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,179): error C2065: двоичном: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,196): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "формате"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,210): error C2059: синтаксическая ошибка: )
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(30,196): error C2065: формате: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "repne"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,3): error C2065: repne: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "scasb"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,9): error C2065: scasb: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,21): error C2065: цикл: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,31): error C2065: считающий: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,50): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "длину"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,50): error C2065: длину: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,61): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "строки"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(31,61): error C2065: строки: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sub"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,3): error C2065: sub: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,7): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edi"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,7): error C2065: edi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,12): error C2065: esi: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,21): error C2065: получили: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,38): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "разницу"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,38): error C2065: разницу: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,53): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "в"
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,53): error C2065: в: необъявленный идентификатор
+C:\assembly\lab7\ConsoleApplication1\ConsoleApplication1.cpp(32,71): fatal  error C1003: число ошибок превышает 100; остановка компиляции

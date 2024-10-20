@@ -1,0 +1,10 @@
+NAME=main
+
+all: $(NAME).exe
+	.\main.exe
+
+$(NAME).exe: $(NAME).obj
+	link /SUBSYSTEM:WINDOWS /LIBPATH:c:\masm32\lib $(NAME).obj
+
+$(NAME).obj: $(NAME).asm
+	ml /c /coff /Cp $(NAME).asm

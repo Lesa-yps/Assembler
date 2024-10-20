@@ -1,0 +1,13 @@
+﻿  lab_08.vcxproj -> C:\assembly\lab8\lab_08\Debug\lab_08.exe
+  
+  Float: 
+  Cpp sum  = 160 ms (count runs = 1000000)
+  Assembler sum  = 163 ms (count runs = 1000000)
+  Cpp mul  = 142 ms (count runs = 1000000)
+  Assembler mul  = 128 ms (count runs = 1000000)
+  
+  Double: 
+  Cpp sum  = 128 ms (count runs = 1000000)
+  Assembler sum  = 129 ms (count runs = 1000000)
+  Cpp mul  = 134 ms (count runs = 1000000)
+  Assembler mul  = 145 ms (count runs = 1000000)

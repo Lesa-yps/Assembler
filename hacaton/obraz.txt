@@ -1,0 +1,155 @@
+.model small
+
+.stack 100h
+
+public EXIT_SUCCESS
+public ALLOCATION_ERROR
+public INDEX_OUT_OF_RANGE
+
+EXIT_SUCCESS = 0
+ALLOCATION_ERROR = 10
+INDEX_OUT_OF_RANGE = 30
+
+.data
+    vector struct
+        len dw 1 dup(?)
+        arr dw 1 dup(?)
+    vector ends
+
+    ; Пример данных вектора
+    vec_data dw 5, 0, 1, 2, 3, 4
+    vector_test vector <>
+
+.code
+; Получить значение байта из массива (Часть 1)
+; Аргументы:
+; ds:dx – сегмент и смещение до структуры
+; cx – позиция байта
+; Результат:
+; bl – значение байта
+; ax – результат выполнения функции:
+;    0 - успех
+;    1 - ошибка: позиция вне диапазона
+get proc
+    ; check cx < len(arr)
+    push ds               ; Сохраняем регистры, которые будем использовать
+    push si
+    push ax
+
+    mov si, dx            ; si указывает на начало структуры
+    mov ax, [si]          ; длина массива в ax
+    cmp cx, ax            ; сравниваем cx с длиной массива
+    jae err_exit          ; если cx >= длине, переходим на обработку ошибки
+
+    ; bl = arr[cx]
+    add si, 2             ; пропускаем длину массива (2 байта)
+    mov di, [si]          ; di указывает на начало массива
+    add di, cx            ; прибавляем смещение для доступа к нужному элементу
+    mov bl, [di]          ; загружаем значение в bl
+
+success_exit:
+    xor ax, ax            ; устанавливаем ax = 0 (успех)
+    jmp exit
+
+err_exit:
+    mov ax, INDEX_OUT_OF_RANGE ; устанавливаем ax = 30 (ошибка: индекс вне диапазона)
+
+exit:
+    pop ax                ; Восстанавливаем регистры
+    pop si
+    pop ds
+    ret
+get endp
+
+; Расчет контрольной суммы CRC-16-CCITT
+; Аргументы:
+; ds:dx – сегмент и смещение до структуры
+; Результат:
+; ax – контрольная сумма
+calculate_crc16 proc
+    push ds               ; Сохраняем регистры, которые будем использовать
+    push si
+    push di
+    push bx
+
+    mov si, dx            ; si указывает на начало структуры
+    mov cx, [si]          ; длина массива в cx
+
+    add si, 2             ; пропускаем длину массива (2 байта)
+    mov di, [si]          ; di указывает на начало массива
+
+    mov ax, 0xFFFF        ; Инициализируем CRC-16 (стандартное начальное значение)
+    xor bx, bx            ; обнуляем bx (будет использоваться как временная переменная)
+
+crc_loop:
+    test cx, cx           ; проверяем, есть ли еще байты для обработки
+    jz crc_done
+
+    mov bl, [di]          ; загружаем байт данных
+    xor bl, ah            ; xor старший байт crc с данным байтом
+    mov bh, bl            ; перемещаем результат в старший байт bx
+    xor bh, bl            ; xor старший и младший байт bx
+    shl bx, 4             ; сдвигаем bx влево на 4 бита
+
+    xor bx, 0x1021        ; xor с многочленом 0x1021
+    xor bx, bl            ; xor младший байт bx с bl
+    shl bx, 3             ; сдвигаем bx влево на 3 бита
+    xor ah, bl            ; xor старший байт crc с младшим байтом bx
+
+    shl ax, 8             ; сдвигаем crc влево на 8 бит
+    xor ax, bx            ; xor crc с bx
+
+    inc di                ; переходим к следующему байту данных
+    loop crc_loop
+
+crc_done:
+    pop bx                ; Восстанавливаем регистры
+    pop di
+    pop si
+    pop ds
+    ret
+calculate_crc16 endp
+
+main:
+    mov ax, @data
+    mov ds, ax
+    mov es, ax
+
+    ; Инициализация vector_test
+    lea si, vec_data
+    mov ax, [si]
+    mov vector_test.len, ax
+    add si, 2
+    mov ax, si
+    mov vector_test.arr, ax
+
+    mov dx, offset vector_test
+
+    ; Вызов функции получения значения байта из массива
+    ;cx = 3 (пример)
+    ;mov cx, 3
+    ;call get
+
+    ; Вывод результата (ax = 0 - успех, 1 - ошибка)
+    ;mov ah, 02h
+    ;mov dl, bl
+    ;int 21h
+    
+    ;mov dl, al
+    ;add al, '0'
+    ;int 21h
+
+    ; Расчет CRC-16
+    call calculate_crc16
+
+    ; Вывод контрольной суммы (ax содержит CRC-16)
+    mov ah, 02h
+    mov dl, ah
+    int 21h
+
+    mov dl, al
+    int 21h
+
+    mov ah, 4Ch
+    int 21h
+end main
